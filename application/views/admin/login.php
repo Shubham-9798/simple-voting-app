@@ -1,6 +1,14 @@
 <?php echo validation_errors(); ?>
+
+<?php echo $this->session->flashdata('status');?>
+
+    <?php if($this->session->flashdata('status')!='') :?>
+        <div class="alert"><?php echo $this->session->flashdata('status');?></div>
+    <?php endif;?>    
+
+
     
-<div class="">
+<div class="register-center">
     <span>Login</span>
 <?php echo form_open('admin/login'); ?>
     <form method="POST">

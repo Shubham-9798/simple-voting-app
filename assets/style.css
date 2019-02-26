@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+body{
+   background-color: rgb(177, 238, 238);
+}
+
+/*#addCondidate ::{
+    //position: relative;
+    //float: right!important;
+}*/
+
+.register-center{
+    width: 50%;
+    background-color: white;
+    position: absolute;
+    top:50%;
+    right:50%;
+    transform: translate(50%,-50%);
+    -webkit-box-shadow: -2px 0px 18px 0px rgba(134,159,235,1);
+    -moz-box-shadow: -2px 0px 18px 0px rgba(134,159,235,1);
+    box-shadow: -2px 0px 18px 0px rgba(134,159,235,1);
+    z-index: -100;
+
+}
+
+.discrip {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8em;
+    align-self: center;
+}
+
+.mc-s {
+    margin-top: 2   px;
+}
+
+.container-1 {
+    height:500px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+#addCondidate {
+    position: absolute;
+    display: none;
+    /* visibility: hidden; */
+    height:auto;
+    top:30%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+  .popup {
+    position: absolute;
+    z-index: 2;
+    display: none;
+    height:auto;
+    top:30%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+@media only screen and (max-width: 600px){
+    .register-center{
+        width: 90%;
+        
+    }
+}
